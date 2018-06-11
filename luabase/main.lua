@@ -1,6 +1,8 @@
-fundemo = require("luabase/functiondemo")
-metademo = require("luabase/metatable")
-cordemo = require("luabase/coroutinedemo")
+require("luabase/functiondemo")
+require("luabase/metatable")
+require("luabase/coroutinedemo")
+require("luabase/oopdemo")
+-- require("luabase/sqldemo")
 
 print("-----------------function--------------------")
 fundemo.sum(100, fundemo.add)
@@ -38,13 +40,31 @@ print(xpcall(
 
 print("-----------------metatable--------------------")
 print(metademo.mytable.key1, metademo.mytable.key2, metademo.mytable.key3, metademo.mytable.key4)
-print(metademo.mytable4.key1, metademo.mytable4.key2, metademo.mytable4.key3, metademo.mytable4.key4)
-print(metademo.mytable4.key1, metademo.mytable4.key2, metademo.mytable4.key3, metademo.mytable4.key4)
+print(metademo.mytable3.key1, metademo.mytable3.key2, metademo.mytable3.key3, metademo.mytable3.key4)
+print(metademo.mytable3.key1, metademo.mytable3.key2, metademo.mytable3.key3, metademo.mytable3.key4)
+metademo.addTable()
+metademo.eqTable()
 
-print("-----------------coroutine--------------------")
+-- print("-----------------coroutine--------------------")
 
-print("-----------------runCodemo--------------------")
-codemo.runCodemo()
+-- print("-----------------runCodemo--------------------")
+-- codemo.runCodemo()
 
-print("-----------------runCodemo2--------------------")
-codemo.runCodemo2()
+-- print("-----------------runCodemo2--------------------")
+-- codemo.runCodemo2()
+
+-- print("-----------------runCodemo3--------------------")
+-- codemo.runCodemo3()
+
+-- print("-----------------runCodemo4--------------------")
+-- codemo.runCodemo4()
+
+-- print("-----------------runCodemo5--------------------")
+-- codemo.runCodemo5()
+
+
+-- print("-----------------OOPDemo--------------------")
+-- oopdemo.runDemo()
+
+-- print("-----------------SQLDemo--------------------")
+-- sqldemo.databaseTest()
